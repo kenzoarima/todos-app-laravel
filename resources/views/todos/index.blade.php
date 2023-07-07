@@ -26,7 +26,7 @@
                     </div>
                     @endif
 
-                    <a class="btn btn-sm btn-info" href="{{ secure_url('todos.create') }}">Create Todo</a>
+                    <a class="btn btn-sm btn-info" href="{{ secure_url(route('todos.create', [], false)) }}">Create Todo</a>
 
                     @if (count($todos) > 0)
                         <table class="table">
@@ -51,9 +51,9 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a class="btn btn-sm btn-success" href="{{ secure_url('todos.show', $todo->id) }}">View</a>
-                                            <a class="btn btn-sm btn-info" href="{{ secure_url('todos.edit', $todo->id) }}">Edit</a>
-                                            <form method="post" action="{{ secure_url('todos.destroy') }}">
+                                            <a class="btn btn-sm btn-success" href="{{ secure_url(route('todos.show', $todo->id, false)) }}">View</a>
+                                            <a class="btn btn-sm btn-info" href="{{ secure_url(route('todos.edit', $todo->id, false)) }}">Edit</a>
+                                            <form method="post" action="{{ secure_url(route('todos.destroy', [], false)) }}">
                                                 @csrf
                                                 @method('DELETE')
                                                 <input type="hidden" name="todo_id" value="{{ $todo->id }}">

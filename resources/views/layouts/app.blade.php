@@ -20,7 +20,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ secure_url('todos.index') }}">
+                <a class="navbar-brand" href="{{ secure_url(route('todos.index', [], false)) }}">
                     Todos
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -39,13 +39,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ secure_url('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ secure_url(route('login', [], false)) }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ secure_url('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ secure_url(route('register', [], false)) }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -55,13 +55,13 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ secure_url('logout') }}"
+                                    <a class="dropdown-item" href="{{ secure_url(route('logout', [], false)) }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ secure_url('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ secure_url(route('logout', [], false)) }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
