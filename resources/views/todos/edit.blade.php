@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <h4>Edit Form</h4>
-                    <form method="post" action="{{ secure_url(route('todos.update', [], false)) }}">
+                    <form method="post" action="{{ route('todos.update') }}">
                         @csrf
                         @method('PUT')
                         <input type="hidden" name="todo_id" value="{{ $todo->id }}">
