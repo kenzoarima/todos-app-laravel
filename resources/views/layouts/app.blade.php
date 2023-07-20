@@ -12,13 +12,65 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=alexandria:400" rel="stylesheet" />
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+<style>
+body {
+  background: #659dbd;
+  color: #fff;
+}
+
+.navbar,
+.dropdown-menu {
+    background: #06527d;
+    color: #fff;
+}
+.navbar a,
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 2px 0 0px rgba(0,0,0,0.3), 0 2px 0px rgba(0,0,0,0.3), 0 -2px 0px rgba(0,0,0,0.3), -2px 0 0px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-family: 'Alexandria', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    width: calc(100% - 70px);
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.dropdown-item:hover, 
+.dropdown-item:focus {
+    background: #659dbd;
+    color: #fff;
+}
+
+.card {
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    background-color: #fbeec1 !important;
+    font-weight: bold !important;
+}
+
+.style-inline-block {
+    display: inline-block;
+}
+
+</style>
+
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light zzbg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('todos.index') }}">
                     Todos

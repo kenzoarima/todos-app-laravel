@@ -26,7 +26,10 @@
                     </div>
                     @endif
 
-                    <a class="btn btn-sm btn-info" href="{{ route('todos.create') }}">Create Todo</a>
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-sm btn-block btn-primary" href="{{ route('todos.create') }}">Create Todo</a>
+                    </div>
+                    
 
                     @if (count($todos) > 0)
                         <table class="table">
@@ -53,11 +56,11 @@
                                         <td>
                                             <a class="btn btn-sm btn-success" href="{{ route('todos.show', $todo->id) }}">View</a>
                                             <a class="btn btn-sm btn-info" href="{{ route('todos.edit', $todo->id) }}">Edit</a>
-                                            <form method="post" action="{{ route('todos.destroy') }}">
+                                            <form method="post" action="{{ route('todos.destroy') }}" class="style-inline-block">
                                                 @csrf
                                                 @method('DELETE')
                                                 <input type="hidden" name="todo_id" value="{{ $todo->id }}">
-                                                <input type="submit" class="btn btn-sm btn-info" value="Delete">
+                                                <input type="submit" class="btn btn-sm btn-warning" value="Delete">
                                             </form>
                                         </td>
                                     </tr>
