@@ -14,9 +14,19 @@
                     @endif
                     
                     <div>
-                        <div><a class="btn btn-sm btn-info" href="{{ url()->previous() }}">Go Back</a></div>
-                        <p><b>Your Todo title is: </b> {{ $todo->title }}</p>
-                        <p><b>Your Todo description is: </b> {{ $todo->description }}</p>
+                        <div class="d-grid gap-2 mb-3">
+                            <a class="btn btn-sm btn-primary" href="{{ url()->previous() }}">Go Back</a>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <div><b>Your Todo title is: </b></div>
+                                <div>{{ $todo->title }}</div>
+                            </div>
+                            <div class="mb-3">
+                                <div><b>Your Todo description is: </b></div>
+                                <div>{{ $todo->description }}</div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
