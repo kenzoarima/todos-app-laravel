@@ -19,13 +19,13 @@
 
 <style>
 body {
-  background: #659dbd;
+  background: #336cce;
   color: #fff;
 }
 
 .navbar,
 .dropdown-menu {
-    background: #06527d;
+    background: #4149c3;
     color: #fff;
 }
 .navbar a,
@@ -48,7 +48,7 @@ body {
 
 .dropdown-item:hover, 
 .dropdown-item:focus {
-    background: #659dbd;
+    background: #336cce;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .card-header {
-    background-color: #fbeec1 !important;
+    background-color: #ffd700 !important;
     font-weight: bold !important;
 }
 
