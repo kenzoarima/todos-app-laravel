@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TodoRequest;
+use App\Models\Category;
 use App\Models\Todo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -31,8 +32,23 @@ class TodoController extends Controller
         Todo::create([
             'title' => $request->title,
             'description' => $request->description,
-            'is_completed' => 0
+            'is_completed' => 0,
+            'category_tag' => $request->category_tag
         ]);
+
+        $temp_category_arr = explode(',', $request->category_tag);
+        foreach ($temp_category_arr as $temp_category_item) {
+            $category = Category::where('cat_name', $temp_category_item)->first();
+
+            if (!$category) {
+                Category::create([
+                    'cat_name' => $temp_category_item
+                ]);
+                Log::info('Added new category {category_item} when saving todo item.', ['category_item' => $temp_category_item]);
+            } else {
+                //
+            }
+        }
 
         $request->session()->flash('alert-success', 'Todo Created Successfully');
 
@@ -82,8 +98,23 @@ class TodoController extends Controller
         $todo->update([
             'title' => $request->title,
             'description' => $request->description,
-            'is_completed' => $request->is_completed
+            'is_completed' => $request->is_completed,
+            'category_tag' => $request->category_tag
         ]);
+
+        $temp_category_arr = explode(',', $request->category_tag);
+        foreach ($temp_category_arr as $temp_category_item) {
+            $category = Category::where('cat_name', $temp_category_item)->first();
+
+            if (!$category) {
+                Category::create([
+                    'cat_name' => $temp_category_item
+                ]);
+                Log::info('Added new category {category_item} when saving todo item.', ['category_item' => $temp_category_item]);
+            } else {
+                //
+            }
+        }
 
         $request->session()->flash('alert-info', 'Todo Updated Successfully');
 
