@@ -27,8 +27,11 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Description</label>
-                            <textarea name="description" class="form-control" cols="5" rows="5">
-                            </textarea>
+                            <textarea name="description" class="form-control" cols="5" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Categories</label>
+                            <textarea name="category_tag" class="form-control" cols="5" rows="1"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

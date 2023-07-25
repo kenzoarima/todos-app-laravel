@@ -19,12 +19,16 @@
                         </div>
                         <div>
                             <div class="mb-3">
-                                <div><b>Your Todo title is: </b></div>
+                                <div><b>Title:</b></div>
                                 <div>{{ $todo->title }}</div>
                             </div>
                             <div class="mb-3">
-                                <div><b>Your Todo description is: </b></div>
+                                <div><b>Description:</b></div>
                                 <div>{{ $todo->description }}</div>
+                            </div>
+                            <div class="mb-3">
+                                <div><b>Categories:</b></div>
+                                <div>{{ $todo->category_tag }}</div>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
@@ -38,6 +38,7 @@
                                     <th scope="col">Title</th>
                                     <th scope="col">Description</th>
                                     <th scope="col">Completed</th>
+                                    <th scope="col">Categories</th>
                                     <th scope="col">Actions</th>
                                 </tr>
                             </thead>
@@ -53,6 +54,7 @@
                                                 <a class="btn btn-sm btn-danger" href="">Incomplete</a>
                                             @endif
                                         </td>
+                                        <td>{{ $todo->category_tag }}</td>
                                         <td>
                                             <a class="btn btn-sm btn-success" href="{{ route('todos.show', $todo->id) }}">View</a>
                                             <a class="btn btn-sm btn-info" href="{{ route('todos.edit', $todo->id) }}">Edit</a>
