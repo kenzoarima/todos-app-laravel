@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">List of Todos</div>
 
                 <div class="card-body">
                     @if (Session::has('alert-success'))
@@ -26,8 +26,10 @@
                     </div>
                     @endif
 
-                    <div class="d-grid gap-2">
-                        <a class="btn btn-sm btn-block btn-primary" href="{{ route('todos.create') }}">Create Todo</a>
+                    <div class="d-grid gap-2 d-lg-block mb-3">
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.create') }}">Create Todo</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.index') }}">View Todos</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('category.index') }}">View Categories</a>
                     </div>
                     
 

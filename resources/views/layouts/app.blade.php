@@ -65,6 +65,13 @@ body {
     display: inline-block;
 }
 
+thead th {
+    background-color: darkgrey !important;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
 </style>
 
 </head>
