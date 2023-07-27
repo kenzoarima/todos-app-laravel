@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TodoController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,4 +32,7 @@ Route::prefix('todos')->as('todos.')->controller(TodoController::class)->group(f
     Route::put('update', 'update')->name('update');
     Route::delete('destroy', 'destroy')->name('destroy');
 });
+
+Route::get('/category/index', [CategoryController::class, 'index'])->name('category.index');
+Route::get('/category/show/{id}', [CategoryController::class, 'show'])->name('category.show');
 
