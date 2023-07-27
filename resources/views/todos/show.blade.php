@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<?php
+// foreach ($temp_category_object_arr as $temp_category_object) {
+//     echo $temp_category_object. '<br>';
+// }
+?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,7 +19,7 @@
                     @endif
                     
                     <div>
-                        <div class="d-grid gap-2 mb-3">
+                        <div class="d-grid gap-2 d-lg-block mb-3">
                             <a class="btn btn-sm btn-primary" href="{{ url()->previous() }}">Go Back</a>
                         </div>
                         <div>
@@ -28,7 +33,11 @@
                             </div>
                             <div class="mb-3">
                                 <div><b>Categories:</b></div>
-                                <div>{{ $todo->category_tag }}</div>
+                                @forelse ($temp_category_object_arr as $temp_category_object)
+                                    <div data-cat-id="{{ $temp_category_object[0]->id }}">{{ $temp_category_object[0]->cat_name }}</div>
+                                @empty
+                                    <div>No categories.</div>
+                                @endforelse
                             </div>
                         </div>
                     </div>

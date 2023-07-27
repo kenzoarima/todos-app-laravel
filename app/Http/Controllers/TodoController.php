@@ -6,6 +6,7 @@ use App\Http\Requests\TodoRequest;
 use App\Models\Category;
 use App\Models\Todo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class TodoController extends Controller
@@ -67,7 +68,18 @@ class TodoController extends Controller
             ]);
         }
         Log::info('Showing todo item details: {id}', ['id' => $id]);
-        return view('todos.show', ['todo' => $todo]);
+
+        $temp_category_object_arr = [];
+        $temp_category_arr = explode(',', $todo->category_tag);
+        foreach ($temp_category_arr as $temp_category_item) {
+            $category = DB::table('categories')
+                            ->where('cat_name','=',$temp_category_item)
+                            ->get();
+            $temp_category_object_arr[] = $category;
+        }
+        //dd($temp_category_object_arr);
+
+        return view('todos.show', ['todo' => $todo, 'temp_category_object_arr' => $temp_category_object_arr]);
     }
 
     public function edit($id)
