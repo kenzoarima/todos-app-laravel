@@ -157,7 +157,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (2, 'This is item 2', 'Item 2 description', 0, 'kiv,long-term', '2023-07-20 13:08:38', '2023-07-20 13:08:38'),
 (3, 'This is item 3', 'Item 3 description', 0, 'begin,kiv', '2023-07-27 00:18:18', '2023-07-27 00:18:18'),
 (4, 'This is item 4', 'Item 4 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(5, 'This is item 5', 'Item 5 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(5, 'This is item 5', 'Item 5 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (6, 'This is item 6', 'Item 6 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (7, 'This is item 7', 'Item 7 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (8, 'This is item 8', 'Item 8 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -165,7 +165,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (10, 'This is item 10', 'Item 10 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (11, 'This is item 11', 'Item 11 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (12, 'This is item 12', 'Item 12 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(13, 'This is item 13', 'Item 13 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(13, 'This is item 13', 'Item 13 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (14, 'This is item 14', 'Item 14 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (15, 'This is item 15', 'Item 15 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (16, 'This is item 16', 'Item 16 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -173,7 +173,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (18, 'This is item 18', 'Item 18 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (19, 'This is item 19', 'Item 19 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (20, 'This is item 20', 'Item 20 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(21, 'This is item 21', 'Item 21 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(21, 'This is item 21', 'Item 21 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (22, 'This is item 22', 'Item 22 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (23, 'This is item 23', 'Item 23 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (24, 'This is item 24', 'Item 24 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -181,7 +181,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (26, 'This is item 26', 'Item 26 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (27, 'This is item 27', 'Item 27 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (28, 'This is item 28', 'Item 28 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(29, 'This is item 29', 'Item 29 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(29, 'This is item 29', 'Item 29 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (30, 'This is item 30', 'Item 30 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (31, 'This is item 31', 'Item 31 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (32, 'This is item 32', 'Item 32 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -189,7 +189,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (34, 'This is item 34', 'Item 34 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (35, 'This is item 35', 'Item 35 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (36, 'This is item 36', 'Item 36 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(37, 'This is item 37', 'Item 37 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(37, 'This is item 37', 'Item 37 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (38, 'This is item 38', 'Item 38 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (39, 'This is item 39', 'Item 39 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (40, 'This is item 40', 'Item 40 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -197,7 +197,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (42, 'This is item 42', 'Item 42 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (43, 'This is item 43', 'Item 43 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (44, 'This is item 44', 'Item 44 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(45, 'This is item 45', 'Item 45 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(45, 'This is item 45', 'Item 45 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (46, 'This is item 46', 'Item 46 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (47, 'This is item 47', 'Item 47 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (48, 'This is item 48', 'Item 48 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -205,7 +205,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (50, 'This is item 50', 'Item 50 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (51, 'This is item 51', 'Item 51 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (52, 'This is item 52', 'Item 52 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(53, 'This is item 53', 'Item 53 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(53, 'This is item 53', 'Item 53 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (54, 'This is item 54', 'Item 54 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (55, 'This is item 55', 'Item 55 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (56, 'This is item 56', 'Item 56 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -213,7 +213,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (58, 'This is item 58', 'Item 58 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (59, 'This is item 59', 'Item 59 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (60, 'This is item 60', 'Item 60 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(61, 'This is item 61', 'Item 61 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(61, 'This is item 61', 'Item 61 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (62, 'This is item 62', 'Item 62 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (63, 'This is item 63', 'Item 63 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (64, 'This is item 64', 'Item 64 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -221,7 +221,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (66, 'This is item 66', 'Item 66 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (67, 'This is item 67', 'Item 67 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (68, 'This is item 68', 'Item 68 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(69, 'This is item 69', 'Item 69 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(69, 'This is item 69', 'Item 69 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (70, 'This is item 70', 'Item 70 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (71, 'This is item 71', 'Item 71 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (72, 'This is item 72', 'Item 72 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -229,7 +229,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (74, 'This is item 74', 'Item 74 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (75, 'This is item 75', 'Item 75 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (76, 'This is item 76', 'Item 76 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(77, 'This is item 77', 'Item 77 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(77, 'This is item 77', 'Item 77 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (78, 'This is item 78', 'Item 78 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (79, 'This is item 79', 'Item 79 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (80, 'This is item 80', 'Item 80 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -237,7 +237,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (82, 'This is item 82', 'Item 82 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (83, 'This is item 83', 'Item 83 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (84, 'This is item 84', 'Item 84 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(85, 'This is item 85', 'Item 85 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(85, 'This is item 85', 'Item 85 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (86, 'This is item 86', 'Item 86 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (87, 'This is item 87', 'Item 87 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (88, 'This is item 88', 'Item 88 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -245,7 +245,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (90, 'This is item 90', 'Item 90 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (91, 'This is item 91', 'Item 91 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (92, 'This is item 92', 'Item 92 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(93, 'This is item 93', 'Item 93 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(93, 'This is item 93', 'Item 93 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (94, 'This is item 94', 'Item 94 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (95, 'This is item 95', 'Item 95 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (96, 'This is item 96', 'Item 96 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
@@ -253,7 +253,7 @@ INSERT INTO `todos` (`id`, `title`, `description`, `is_completed`, `category_tag
 (98, 'This is item 98', 'Item 98 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (99, 'This is item 99', 'Item 99 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (100, 'This is item 100', 'Item 100 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
-(101, 'This is item 101', 'Item 101 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58')
+(101, 'This is item 101', 'Item 101 description', 0, 'urgent', '2023-07-27 00:18:58', '2023-07-27 00:18:58'),
 (102, 'This is item 102', 'Item 102 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (103, 'This is item 103', 'Item 103 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
 (104, 'This is item 104', 'Item 104 description', 0, 'kiv', '2023-07-27 00:18:39', '2023-07-27 00:18:39'),
