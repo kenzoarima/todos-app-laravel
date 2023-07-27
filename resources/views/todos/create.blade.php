@@ -19,7 +19,7 @@
                     </div>
                     @endif
 
-                    <form method="post" action="{{ route('todos.store') }}">
+                    <form method="post" action="{{ secure_url(route('todos.store', [], false)) }}">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">Title</label>

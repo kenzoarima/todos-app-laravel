@@ -27,9 +27,9 @@
                     @endif
 
                     <div class="d-grid gap-2 d-lg-block mb-3">
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.create') }}">Create Todo</a>
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.index') }}">View Todos</a>
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('category.index') }}">View Categories</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('todos.create', [], false)) }}">Create Todo</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('todos.index', [], false)) }}">View Todos</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('category.index', [], false)) }}">View Categories</a>
                     </div>
 
                     @if (count($categories) > 0)
@@ -47,7 +47,7 @@
                                         <td>{{ $category->cat_name }}</td>
                                         <td>{{ $category->created_at }}</td>
                                         <td>
-                                            <a class="btn btn-sm btn-success" href="{{ route('category.show', $category->id) }}">View Posts</a>
+                                            <a class="btn btn-sm btn-success" href="{{ secure_url(route('category.show', $category->id, false)) }}">View Posts</a>
                                             <div class="style-inline-block">({{ $tempCategoryCounter[$category->id] }} posts)</div>
                                         </td>
                                     </tr>

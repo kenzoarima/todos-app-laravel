@@ -27,9 +27,9 @@
                     @endif
 
                     <div class="d-grid gap-2 d-lg-block mb-3">
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.create') }}">Create Todo</a>
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('todos.index') }}">View Todos</a>
-                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ route('category.index') }}">View Categories</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('todos.create', [], false)) }}">Create Todo</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('todos.index', [], false)) }}">View Todos</a>
+                        <a class="btn btn-sm zbtn-block btn-primary" href="{{ secure_url(route('category.index', [], false)) }}">View Categories</a>
                     </div>
                     
 
@@ -58,9 +58,9 @@
                                         </td>
                                         <td>{{ $todo->category_tag }}</td>
                                         <td>
-                                            <a class="btn btn-sm btn-success" href="{{ route('todos.show', $todo->id) }}">View</a>
-                                            <a class="btn btn-sm btn-info" href="{{ route('todos.edit', $todo->id) }}">Edit</a>
-                                            <form method="post" action="{{ route('todos.destroy') }}" class="style-inline-block">
+                                            <a class="btn btn-sm btn-success" href="{{ secure_url(route('todos.show', $todo->id, false)) }}">View</a>
+                                            <a class="btn btn-sm btn-info" href="{{ secure_url(route('todos.edit', $todo->id, false)) }}">Edit</a>
+                                            <form method="post" action="{{ secure_url(route('todos.destroy', [], false)) }}" class="style-inline-block">
                                                 @csrf
                                                 @method('DELETE')
                                                 <input type="hidden" name="todo_id" value="{{ $todo->id }}">

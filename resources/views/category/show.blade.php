@@ -35,7 +35,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <a href="{{ route('todos.edit', $todo->id) }}" class="btn btn-info stretched-link">View Todo</a>
+                                <a href="{{ secure_url(route('todos.edit', $todo->id, false)) }}" class="btn btn-info stretched-link">View Todo</a>
                             </div>
                             @empty
                                 <div>No Todos with this category.</div>
