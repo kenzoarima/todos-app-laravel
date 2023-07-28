@@ -73,7 +73,7 @@ class TodoController extends Controller
         $temp_category_arr = explode(',', $todo->category_tag);
         foreach ($temp_category_arr as $temp_category_item) {
             $category = DB::table('categories')
-                            ->where('cat_name','=',$temp_category_item)
+                            ->where('category_name','=',$temp_category_item)
                             ->get();
             $temp_category_object_arr[] = $category;
         }
